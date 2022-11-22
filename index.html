@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+    <title>Robotron 2000</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <section class="robotron">
+            <img class="robo" src="img/robotron.png" alt="Robotron" id="robotron">
+            <figcaption class="titulo">ROBOTRON <br>&nbsp;&nbsp;2000</figcaption>
+        </section>
+
+        <section class="box">
+            <div class="frame">
+                <div class="estatistica">
+                    <p class="estatistica-titulo">Força</p>
+                    <div class="estatistica-valor">
+                        <p class="estatistica-numero" data-estatistica="forca">00</p>
+                    </div>
+                </div>
+                <div class="estatistica">
+                    <div class="estatistica-valor">
+                        <p class="estatistica-numero" data-estatistica="poder">00</p>
+                    </div>
+                    <p class="estatistica-titulo" style="justify-content: flex-end">Poder</p>
+                </div>
+                <div class="estatistica">
+                    <p class="estatistica-titulo">Energia</p>
+                    <div class="estatistica-valor">
+                        <p class="estatistica-numero" data-estatistica="energia">00</p>
+                    </div>
+                </div>
+                <div class="estatistica">
+                    <div class="estatistica-valor">
+                        <p class="estatistica-numero" data-estatistica="velocidade">00</p>
+                    </div>
+                    <p class="estatistica-titulo" style="justify-content: flex-end">Velocidade</p>
+                </div>
+            </div>
+
+            <div class="frame espaco-frame" style="height: auto">
+                <form action="">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Braços</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca="bracos">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-peca="bracos">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Blindagem</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca="blindagem">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-peca="blindagem">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Núcleos</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca="nucleos">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-peca="nucleos">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Pernas</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca="pernas">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-peca="pernas">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Foguetes</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca="foguetes">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-peca="foguetes">+</buttom>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="botoes">
+            <h1>Escolha a cor do seu Robotron: </h1>
+            <button class="botao botaoAzul" id="botaoAzul" onclick="trocaImagem('Azul')">Robotron Azul</button>
+            <button class="botao botaoAmarelo" id="botaoAmarelo" onclick="trocaImagem('Amarelo')">Robotron Amarelo</button>
+            <button class="botao botaoBranco" id="botaoBranco" onclick="trocaImagem('Branco')">Robotron Branco</button>
+            <button class="botao botaoPreto" id="botaoPreto" onclick="trocaImagem('Preto')">Robotron Preto</button>
+            <button class="botao botaoRosa" id="botaoRosa" onclick="trocaImagem('Rosa')">Robotron Rosa</button>
+            <button class="botao botaoVermelho" id="botaoVermelho" onclick="trocaImagem('Vermelho')">Robotron Vermelho</button>
+        </section>
+    </footer>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

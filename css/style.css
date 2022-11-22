@@ -1,0 +1,229 @@
+:root {
+    --main-cinza: #CCCCCC;
+    --main-branco: #FFFFFF;
+    --main-preto: #000000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/fundo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover cover;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+body, input {
+    font-family: 'Teko', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    gap: 1vw;
+}
+
+.robotron {
+    display: flex;
+    width: 42%;
+    position: relative;
+}
+
+.robo {
+    width: auto;
+    height: 90vh;
+    position: absolute;
+    left: 2vw;
+    top: 1vh;
+    z-index: 1
+}
+
+.titulo {
+    transform: rotate(-90deg);
+    display: flex;
+    font-size: 18vh;
+    font-weight: 500;
+    line-height: 14vh;
+    color: white;
+    position: absolute;
+    bottom: 25vh;
+    left: -4vw;
+}
+
+.box {
+    display: flex;
+    width: calc(58% - 140px);
+    height: 100%;
+    margin: 0 70px 0 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 80vh;
+    background: transparent;
+}
+
+.espaco-frame {
+    background: rgb(50, 63, 84, 0.8);
+    clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
+    padding: 30px 40px;
+}
+
+.estatistica {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.estatistica-titulo {
+    display: flex;
+    width: 50%;
+    height: 50px;
+    font-size: 4vh;
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+}
+
+.estatistica-valor {
+    display: flex;
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 18vh;
+    height: 18vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.estatistica-numero {
+    display: flex;
+    text-align: center;
+    font-size: 8vh;
+    line-height: 7vh;
+    padding-top: 1vh;
+}
+
+.peca {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.peca-titulo {
+    display: flex;
+    width: 53%;
+    height: 34px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 4vh;
+}
+
+.controle {
+    display: flex;
+    width: 47%;
+    background: transparent;
+    float: right;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.controle-contador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 30px;
+    background: transparent;
+    border: 0;
+    padding-top: 7px;
+    margin: 0 14px;
+    color: white;
+    font-size: 5vh;
+    text-align: center;
+}
+
+.controle-ajuste {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    font-size: 4vh;
+    background: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.6vh;
+}
+
+.linha {
+    border-bottom: 1px rgb(255, 255, 255, 0.4);
+}
+
+.botoes {
+    display: flex;
+    width: 100%;
+}
+
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background: rgb(0,212,255);
+    background: linear-gradient(180deg, rgba(0,212,255,0) 0%, rgba(0,0,0,1) 100%);
+    padding-top: 3vh;
+}
+
+h1 {
+    color: white;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.botoes {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao {
+    height: 34px;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    padding: 0 30px;
+    margin-left: 10px;
+    background: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.botao-ativo {
+    color: red;
+    border: 1px solid red;
+}
